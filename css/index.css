@@ -1,0 +1,84 @@
+@charset "UTF-8";
+body, input, img, a, ul, h1, h2, h3, h4, h5, h6, p, li, i, em, b, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 12px;
+  text-decoration: none;
+  list-style: none;
+  font-family: Helvetica,"微软雅黑",sans-serif; }
+
+img {
+  border: 0; }
+
+a {
+  color: #333; }
+
+input {
+  outline: none; }
+
+body {
+  background: url(../img/bg.jpg) center center;
+  background-size: 100%; }
+
+.screen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 600px;
+  height: 450px;
+  border: 1px solid #000;
+  background: url(../img/qipan.jpg); }
+  .screen #canvas {
+    border-right: 1px solid #000; }
+  .screen .ai, .screen #restart {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    width: 100px;
+    height: 30px;
+    background: #333;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "宋体";
+    color: #fff; }
+    .screen .ai:active, .screen #restart:active {
+      color: #000;
+      background: #fff; }
+  .screen #restart {
+    top: 70px; }
+  .screen .active {
+    background: red; }
+  .screen #watch {
+    position: absolute;
+    right: 25px;
+    top: 120px; }
+  .screen .mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none; }
+    .screen .mask div {
+      width: 200px;
+      height: 50px;
+      background: #fff;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      line-height: 50px;
+      font-size: 30px;
+      text-align: center; }

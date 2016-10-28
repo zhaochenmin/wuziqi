@@ -1,0 +1,64 @@
+@mixin juzhong{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto
+}
+@mixin zuoyou{
+	position: absolute;
+	left:0;
+	right:0;
+	margin:auto;
+}
+@mixin shangxia{
+	position:absolute;
+	top:0;
+	bottom:0;
+	margin:auto;
+}
+@mixin cute($size){
+	width:$size;
+	height:$size;
+}
+@mixin yuan{
+	@include cute;
+	border-radius:50%;
+}
+$l-size:1024px;
+@mixin onl{
+	@media screen and(max-width:$l-size){
+		@content;
+	}
+}
+$m-size:768px;
+@mixin onm{
+	@media screen and(max-width:$m-size){
+		@content;
+	}
+}
+$s-size:400px;
+@mixin ons{
+	@media screen and(max-width:$s-size){
+		@content;
+	}
+}
+body,input,img,a,ul,h1,h2,h3,h4,h5,h6,p,li,i,em,b,p{
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:12px;
+	text-decoration: none;
+	list-style:none;
+	font-family: Helvetica,"微软雅黑",sans-serif;
+}
+img{
+	border:0;
+}
+a{
+	color: #333;
+}
+input{
+	outline: none;
+}
